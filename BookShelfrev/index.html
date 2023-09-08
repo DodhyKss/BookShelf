@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->z
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- section input book -->
+      <section>
+        <div class="input-book">
+          <h2>Add Book</h2>
+          <form class="forms" action="#" id="input-form">
+            <div class="form-input">
+              <input type="text" id="inputBookTittle" name="title" required placeholder="Book Tittle" />
+            </div>
+            <div class="form-input">
+              <input type="text" id="inputBookAuthor" name="author" required placeholder="Author" />
+            </div>
+            <div class="form-input">
+              <input type="number" id="inputBookYear" name="year" required placeholder="Year" />
+            </div>
+            <div>
+              <label for="checkbox">Done read?</label>
+              <input  type="checkbox" id="isRead">
+            </div>
+            <button type="submit" class="buttonSubmit" id="buttonSubmit">Input Book</button>
+          </form>
+        </div>
+      </section>
+      <!-- section undone read book -->
+      <section>
+        <div class="book-list">
+          <h2>Undone Read <span id="unread-book"></span></h2> 
+          <div class="list-books" id="unreadBooksItems"></div>
+        </div>
+      </section>
+      <!-- section done read book -->
+      <section>
+        <div class="book-list">
+          <h2>Done Read <span id="read-book"></span></h2>
+          <div class="list-books" id="readBooksItems"></div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <h3 style="text-align: center;">Copyright 2023</h3>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+h2 {
+  font-size: 20px;
+  color: lightblue;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: lightblue;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+header h1 {
+  margin: auto;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  color: dimgray;
+}
+
+.input-book {
+  position: relative;
+  width: 30vw;
+  border-radius: 8px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 16px;
+  height: 360px;
+  box-shadow: 0 6px 12px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.4);
+}
+.book-list {
+  width: 30vw;
+  border-radius: 8px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 16px;
+  height: fit-content;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.4);
+}
+
+.items {
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 5px 15px 5px 15px;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.4);
+}
+
+.items h2 {
+  margin-bottom: unset;
+  font-size: 15px;
+}
+
+.items p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.forms {
+  display: flex;
+  padding: 10px 16px;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="number"] {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  border: 0px;
+  color:dimgray;
+  border-radius: 9px;
+  padding: 11px;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+  font-size: 18px;
+}
+
+.buttonSubmit {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px 19px;
+  border: 0px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  margin: auto;
+  cursor: pointer;
+  background-color: lightblue;
+  
+}
+
+.buttonSubmit:hover {
+  background: lightgreen;
+  color:white;
+}
+
+
+/* delete border on focus */
+input[type="text"], input[type="number"], .buttonSubmit:focus {
+  outline: none;
+}
+
+
+
+.delete-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 7px;
+  background-color:crimson;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.read-button, .unread-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: green;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+footer{
+  align-items: center;
+  color: white;
+  background-color: lightblue;
+  padding: 5px;
+}
